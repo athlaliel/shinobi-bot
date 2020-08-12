@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :posts
-  post '/callback' => 'linebot#callback'
+  post '/callback' => 'posts#callback'
   root 'posts#index'
 end
