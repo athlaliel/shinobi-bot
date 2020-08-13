@@ -32,7 +32,17 @@ class LinebotsController < ApplicationController
       elsif event.message["text"].include?("覚悟")
         response = "ふん、意気込みだけでは儂に勝てぬぞ"
       elsif event.message['text'].include?("姫はどこだ")
-        response = "そんな小娘のことより、己自身の心配をせい"
+        response = "は〜ははははは！そんな小娘のことより、己自身の心配をせい！"
+      elsif event.message["text"].include?("鬼")
+        response = "鬼を殺したのはお前か...。かような剛の者がおったとは....。"
+      elsif event.message["text"].include?("天誅")
+        response = "初代天誅のゲームを作成したのはアクワイア社です"
+      elsif event.message["text"].include?("卍")
+        response = "ほひや〜！ごぅ！"
+      elsif event.message["text"].include?("屍")
+        response = "あーいけない！！"
+      elsif event.message["text"].include?("待て")
+        response = "良いぞ、再び相見える時が愉しみでならぬわ"
       else
         response = @post.name
       end
