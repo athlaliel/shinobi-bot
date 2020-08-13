@@ -33,25 +33,13 @@ class LinebotsController < ApplicationController
         response = "ダメチンポ！！！！！！！！"
       elsif event.message['text'].include?("予習")
         response = "復讐"
-      elsif event.message['text'].include?("394")
-        response = "kill all the mi○i!!!!!"
-      elsif event.message['text'].include?("winny")
-        response = "俺たちは絶対許さへんでぇ！"
-      elsif event.message['text'].include?("霊霊霊霊霊霊霊霊")
-        response = "魔魔魔魔魔魔魔魔"
-      elsif event.message['text'].include?("パトカー")
-        response = "燃やす"
-      elsif event.message['text'].include?("チューチューラブリームニムニムラムラ")
-        response = "プリンプリンボロンヌルルレロレロ"
-      elsif event.message['text'].include?("ダメチンポ握れ")
-        response = "GET UP BOYS！！！！！！！！"
       else
         response = @post.name
       end
       #if文でresponseに送るメッセージを格納
 
       case event
-      when Line::Bot::Event::MessageType::String
+      when Line::Bot::Event::Message
         case event.type
         when Line::Bot::Event::MessageType::Text
           message = {
