@@ -23,7 +23,7 @@ class LinebotsController < ApplicationController
     end
 
     events = client.parse_events_from(body)
-    
+
       events.each { |event|
 
       # event.message['text']でLINEで送られてきた文書を取得
@@ -45,17 +45,13 @@ class LinebotsController < ApplicationController
         response = "プリンプリンボロンヌルルレロレロ"
       elsif event.message['text'].include?("ダメチンポ握れ")
         response = "GET UP BOYS！！！！！！！！"
-      elsif event.message['text'].include?("益山曜")
-        response = "駆け出しエンジニア"
-      elsif event.message['text'].include?("浦野祐作")
-        response = "ようの尊敬する天才エンジニア＠いつも助かってます"
       else
         response = @post.name
       end
       #if文でresponseに送るメッセージを格納
 
       case event
-      when Line::Bot::Event::Message
+      when Line::Bot::Event::MessageType::String
         case event.type
         when Line::Bot::Event::MessageType::Text
           message = {
