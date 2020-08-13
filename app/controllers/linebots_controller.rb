@@ -23,8 +23,8 @@ class LinebotsController < ApplicationController
     end
 
     events = client.parse_events_from(body)
-
-    events.each { |event|
+    
+      events.each { |event|
 
       # event.message['text']でLINEで送られてきた文書を取得
       if event.message['text'].include?("麺カタ")
