@@ -43,6 +43,12 @@ class LinebotsController < ApplicationController
         response = "あーいけない！！"
       elsif event.message["text"].include?("待て")
         response = "良いぞ、再び相見える時が愉しみでならぬわ"
+      elsif event.message["text"].include?("冥王")
+        response = "幾ら鍛錬を積もうと所詮は人〜間、儚いものよ..."
+      elsif event.message["text"].include?("片岡")
+        response = "だが越後屋の事もある、其方も慎重にな"
+      elsif event.message["text"].include?("朱雀")
+        response = "戦い続けろ...強者よ、...呪え...血塗られた...己の業を..."
       else
         response = @post.name
       end
