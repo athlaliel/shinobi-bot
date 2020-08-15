@@ -28,3 +28,8 @@
 <img width="494" alt="bot" src="https://user-images.githubusercontent.com/66309248/90310275-0ba26000-df2b-11ea-9bbf-5d2bba2fc41d.png">
 
 
+# herokuを使用する上で記載したQiita
+
+『herokuで使用頻度が多かったコマンド集』
+
+https://qiita.com/athlaliel/items/24b401f82a74eb8ed215
