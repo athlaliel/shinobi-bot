@@ -30,6 +30,6 @@
 
 # herokuを使用する上で記載したQiita
 
-###『herokuで使用頻度が多かったコマンド集』
+### 『herokuで使用頻度が多かったコマンド集』
 
 ### https://qiita.com/athlaliel/items/24b401f82a74eb8ed215
