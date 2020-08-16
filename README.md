@@ -24,6 +24,19 @@
 
 ![shinobi-bot](https://user-images.githubusercontent.com/66309248/90310040-c2511100-df28-11ea-98ba-7a47b6a2b9a7.gif)
 
+# 反応する特定ワードリスト
+- パスワード
+- 覚悟
+- 姫はどこだ
+- 鬼
+- 天誅
+- 卍
+- 屍
+- 待て
+- 冥王
+- 片岡
+- 朱雀
+
 # 友達ID&バーコード
 <img width="494" alt="bot" src="https://user-images.githubusercontent.com/66309248/90310275-0ba26000-df2b-11ea-9bbf-5d2bba2fc41d.png">
 
